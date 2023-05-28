@@ -11,7 +11,7 @@ public class connect {
 
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
-            c = DriverManager.getConnection("jdbc:mysql://localhost:3306/hotel","root","datnq123");
+            c = DriverManager.getConnection("jdbc:mysql://localhost:3306/mysql-prj","username","<password>");
             s = (Statement)c.createStatement();		
             // int result = s.executeUpdate("CREATE DATABASE databasename");
         }catch(ClassNotFoundException | SQLException e) {
